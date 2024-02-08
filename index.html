@@ -8,22 +8,39 @@
     , initial-scale=1.0"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Quotes Generator</title>
   </head>
   <body>
     <header>
-      <h1>Quotes Generator</h1>
-      <h2>Get some awesome quotes with the help of SheCodes AI</h2>
-      <form>
-        <input type="search" placeholder="Eneter the topic.." />
-        <input type="Submit" value="search" />
-      </form>
+      <h1><strong>Quotes Generator</strong></h1>
+      <p>Get awesome quotes with the help of SheCodes AI</p>
     </header>
     <main>
-      <h3>
-        "Love recognizes no barriers. It jumps hurdles, leaps fences, penetrates
-        walls to arrive at its destination full of hope." - Maya Angelou
-      </h3>
+        <div class="form-container">
+      <form class="form">
+        <input
+          type="text"
+          placeholder="Enter the topic.."
+          autofocus="required"
+          autocomplete="off"
+          class="topic"
+        />
+        <input type="Submit" value="Search" class="search" />
+        </div>
+      </form>
+      <div class="quotes">
+        <h2><em>
+          "Love recognizes no barriers. It jumps hurdles, leaps fences,
+          penetrates walls to arrive at its destination full of hope." 
+                         Maya Angelou</em>
+        </h2>
+      </div>
     </main>
     <footer>
       👩‍💻 by Sweta Panda is open-sourced on

@@ -1,6 +1,70 @@
 body {
   text-align: center;
-  background: #fff6f6;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+}
+h1 {
+  margin-top: 50px;
+  font-size: 48px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+p {
+  font-size: 13px;
+  font-family: "Rubik", sans-serif;
+  font-weight: lighter;
+  margin-top: -20px;
+}
+
+form {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 465px;
+  max-height: 300px;
+  /* max-width: 500px;
+  max-height: 600px; */
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: block;
+}
+a {
+  color: #cbbcf6;
+}
+.topic {
+  padding: 10px;
+  width: 45%;
+  border-radius: 8px;
+  border-style: none;
+}
+.search {
+  padding: 10px;
+  width: 20%;
+  background-color: #cbbcf6;
+  border-radius: 8px;
+  border-style: none;
+  margin-left: 5px;
+}
+h2 {
+  font-family: "Merriweather", serif;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  color: #000000;
+  line-height: 2;
+  /* word-wrap: break-word; */
+}
+.quotes {
+  max-width: 508px;
+  max-height: 600px;
+  font-display: flex;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
 }
 footer {
   border-top: 1px solid rgba(39, 33, 66, 0.08);
@@ -8,6 +72,5 @@ footer {
   margin: 10px;
   font-size: 10px;
   text-align: center;
-  color: rgba(65, 50, 100, 0.5);
-  font-weight: 600px;
+  color: rgba(33, 26, 51, 0.5);
 }
