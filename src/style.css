@@ -15,6 +15,10 @@ h1 {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  color: #680747;
+}
+.api-name {
+  color: #6643b5;
 }
 p {
   font-size: 13px;
@@ -34,8 +38,14 @@ form {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: block;
 }
+.hint {
+  margin-left: -260px;
+  opacity: 0.5;
+  font-size: 13px;
+  margin-top: 5px;
+}
 a {
-  color: #cbbcf6;
+  color: #6643b5;
 }
 .topic {
   padding: 15px;
@@ -57,14 +67,6 @@ a {
   font-weight: 700;
   border: 1px solid #cbbcf6;
 }
-h2 {
-  font-family: "Merriweather", serif;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-  color: #000000;
-  line-height: 2;
-  font-style: italic;
-  /* word-wrap: break-word; */
-}
 .quotes {
   max-width: 508px;
   max-height: 600px;
@@ -73,6 +75,37 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 8px;
 }
+h2 {
+  font-family: "Merriweather", serif;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  color: #000000;
+  line-height: 2;
+  font-style: italic;
+  font-size: 20px;
+  /* word-wrap: break-word; */
+}
+.hidden {
+  /* display: none; */
+  font-family: "Merriweather", serif;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  color: #000000;
+  line-height: 2;
+  font-style: italic;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 footer {
   /* border-top: 1px solid rgba(39, 33, 66, 0.08); */
   padding: 10px 0 0 0;
