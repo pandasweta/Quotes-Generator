@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+    <title>My Project</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: white;
+        font-family: "Roboto", sans-serif;
+        /* margin-top: 80px; */
+      }
+      .calculator {
+        background-color: #f9f8fd;
+        margin: 30px auto;
+        max-width: 200px;
+        max-height: 600px;
+        padding: 30px;
+        box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+        border-radius: 10px;
+      }
+
+      form {
+        margin: 10px;
+      }
+      .button-item {
+        padding: 10px;
+        max-width: 200px;
+        border-radius: 5px;
+        border: 1px solid rgba(39, 33, 66, 0.5);
+      }
+      button {
+        padding: 10px;
+        margin: 8px;
+        width: 40px;
+        background-color: #885df1;
+        border-color: none;
+        border-style: none;
+        border-radius: 5px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <header>
+        <form>
+          <input
+            type="text"
+            placeholder=""
+            name="display"
+            class="button-item"
+            id="button-item"
+            disabled
+          />
+        </form>
+      </header>
+      <main>
+        <div class="row1">
+          <button class="button-button" id="button1">1</button>
+          <button class="button-button">2</button>
+          <button class="button-button">+</button>
+        </div>
+        <div class="row2">
+          <button class="button-button">3</button>
+          <button class="button-button">4</button>
+          <button class="button-button">-</button>
+        </div>
+
+        <div class="row3">
+          <button class="button-button">5</button>
+          <button class="button-button">6</button>
+          <button class="button-button">-</button>
+        </div>
+        <div class="row4">
+          <button class="button-button">7</button>
+          <button class="button-button">8</button>
+          <button class="button-button">.</button>
+        </div>
+        <div class="row5">
+          <button class="button-button">9</button>
+          <button class="button-button">0</button>
+          <button class="button-button">*</button>
+        </div>
+        <div class="row6">
+          <button class="button-button">/</button>
+          <button class="button-button">%</button>
+          <button class="button-button">=</button>
+        </div>
+      </main>
+    </div>
+    <script>
+      function displayNumbers() {
+        let formElement = document.querySelector("#button-item");
+        let x = document.querySelector("#button1");
+        console.log(x.target.value);
+      }
+
+      let buttonNum = document.querySelector("#button1");
+      buttonNum.addEventListener("click", displayNumbers);
+    </script>
+  </body>
+</html>
